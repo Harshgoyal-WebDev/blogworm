@@ -14,8 +14,8 @@ export class Services{
     }
     async createPost({title, slug, content, featuredImage,status , userId}){
         try {
-            return await this.databases.createDocumnet(
-                config.appwriteDatabseId,
+            return await this.databases.createDocument(
+                config.appwriteDatabaseId,
                 config.appwriteCollectionId,
                 slug,
                 {
@@ -34,7 +34,7 @@ export class Services{
     async updatePost(slug,{title, content, featuredImage,status,userId}){
         try {
             return await this.databases.updateDocument(
-                config.appwriteDatabseId,
+                config.appwriteDatabaseId,
                 config.appwriteCollectionId,
                 slug,{
                     title,
@@ -109,9 +109,9 @@ export class Services{
             throw error;
         }
     }
-    async getPreview(fileId){
+     getPreview(fileId){
         try {
-            return await this.storage.getFilePreview(
+            return this.storage.getFilePreview(
                 config.appwriteBucketId,
                 fileId
             )

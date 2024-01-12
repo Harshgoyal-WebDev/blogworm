@@ -4,7 +4,7 @@ import Container from "./container/Container";
 import Logoutbtn from "./Header/Logoutbtn";
 import Logo from "./Logo";
 import Input from "./Input";
-
+import Select from "./Select"
 import RTE from "./Rte";
 import Signup from "./Signup";
 import Login from "./Login"
@@ -25,6 +25,7 @@ export {
     Login,
     PostForm,
     Postcard,
-    Authlayout
+    Authlayout,
+    Select
 
 }
