@@ -109,7 +109,7 @@ function Footer() {
                             <ul>
                                 <li className="mb-4">
                                     <Link
-                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
+                                        className=" text-base font-medium duration-200 text-gray-100 hover:text-gray-700"
                                         to="/"
                                     >
                                         Terms &amp; Conditions
@@ -117,7 +117,7 @@ function Footer() {
                                 </li>
                                 <li className="mb-4">
                                     <Link
-                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
+                                        className=" text-base font-medium duration-200 text-gray-100 hover:text-gray-700"
                                         to="/"
                                     >
                                         Privacy Policy

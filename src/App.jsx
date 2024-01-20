@@ -43,7 +43,7 @@ function App() {
   }else{
     return(
       <>
-      <div className="bg-black text-white">yup</div>
+      <div className="bg-black text-white w-full h-screen flex items-center justify-center">Loading...</div>
       </>
     )
   }
