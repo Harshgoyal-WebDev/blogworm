@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import authService from '../appwrite/Auth.js'
+import authService from '../appwrite/auth.js'
 import {Link ,useNavigate} from 'react-router-dom'
 import {login} from '../store/authSlice'
 import {Button, Input, Logo} from './index.js'
@@ -42,7 +42,7 @@ function Signup() {
                         Sign In
                     </Link>
                 </p>
-                {error && <p className="text-red-600 mt-8 text-center">{error}</p>}
+                
 
                 <form onSubmit={handleSubmit(create)}>
                     <div className='space-y-5'>
